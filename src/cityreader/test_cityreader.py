@@ -2,11 +2,23 @@ import unittest
 from cityreader import City, cityreader
 
 def check_city(inp, exp):
+    print(inp, exp)
     if inp.name != exp.name:
+      print('Fail name')
+      print(inp.name, exp.name)
+      print(type(inp.name), type(exp.name))
       return False
+      
     if inp.lat != exp.lat:
+      print('Fail lat')
+      print(inp.lat, exp.lat)
+      print(type(inp.lat), type(exp.lat))
       return False
+      
     if inp.lon != exp.lon:
+      print('Fail lon')
+      print(inp.lon, exp.lon)
+      print(type(inp.lon), type(exp.lon))
       return False
     return True
 
